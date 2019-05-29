@@ -18,7 +18,7 @@ source:
     - 0004-Fix-finding-Boost-for-Python-2.patch  # [py2k]
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   ignore_run_exports:
