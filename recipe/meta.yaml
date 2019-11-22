@@ -11,6 +11,7 @@ source:
   patches:
     # From upstream
     - 0001-Fix-installation-with-Python-3.6-3.7.patch
+    - 0002-Fix-Python-3.8.patch
     # Patches for conda
     - 0001-Boost-isn-t-required-if-only-building-Python-3.patch
     - 0002-Fix-gettext-directory-on-Darwin.patch
