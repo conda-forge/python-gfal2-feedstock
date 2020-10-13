@@ -5,9 +5,13 @@ Home: Python bindings for gfal 2.0
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-gfal2-feedstock/blob/master/LICENSE.txt)
 
 Summary: GFAL (Grid File Access Library) is a C library providing an abstraction layer of the grid storage system complexity.
+
+Development: https://gitlab.cern.ch/dmc/gfal2-bindings
+
+Documentation: https://dmc-docs.web.cern.ch/dmc-docs/gfal2-python.html
 
 GFAL (Grid File Access Library) is a C library providing an abstraction
 layer of the grid storage system complexity. The version 2 of GFAL tries to
@@ -70,6 +74,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>linux_64_boost1.72.0python3.9.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6746&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-gfal2-feedstock?branchName=master&jobName=linux&configuration=linux_64_boost1.72.0python3.9.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>linux_64_boost1.74.0python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6746&branchName=master">
@@ -88,6 +99,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6746&branchName=master">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-gfal2-feedstock?branchName=master&jobName=linux&configuration=linux_64_boost1.74.0python3.8.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_64_boost1.74.0python3.9.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6746&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-gfal2-feedstock?branchName=master&jobName=linux&configuration=linux_64_boost1.74.0python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -112,6 +130,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>linux_aarch64_boost1.72.0python3.9.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6746&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-gfal2-feedstock?branchName=master&jobName=linux&configuration=linux_aarch64_boost1.72.0python3.9.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>linux_aarch64_boost1.74.0python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6746&branchName=master">
@@ -130,6 +155,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6746&branchName=master">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-gfal2-feedstock?branchName=master&jobName=linux&configuration=linux_aarch64_boost1.74.0python3.8.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_boost1.74.0python3.9.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6746&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-gfal2-feedstock?branchName=master&jobName=linux&configuration=linux_aarch64_boost1.74.0python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -154,6 +186,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>linux_ppc64le_boost1.72.0python3.9.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6746&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-gfal2-feedstock?branchName=master&jobName=linux&configuration=linux_ppc64le_boost1.72.0python3.9.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>linux_ppc64le_boost1.74.0python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6746&branchName=master">
@@ -172,6 +211,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6746&branchName=master">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-gfal2-feedstock?branchName=master&jobName=linux&configuration=linux_ppc64le_boost1.74.0python3.8.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_boost1.74.0python3.9.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6746&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-gfal2-feedstock?branchName=master&jobName=linux&configuration=linux_ppc64le_boost1.74.0python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -196,6 +242,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>osx_64_boost1.72.0python3.9.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6746&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-gfal2-feedstock?branchName=master&jobName=osx&configuration=osx_64_boost1.72.0python3.9.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>osx_64_boost1.74.0python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6746&branchName=master">
@@ -214,6 +267,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6746&branchName=master">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-gfal2-feedstock?branchName=master&jobName=osx&configuration=osx_64_boost1.74.0python3.8.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_boost1.74.0python3.9.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6746&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-gfal2-feedstock?branchName=master&jobName=osx&configuration=osx_64_boost1.74.0python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr>
