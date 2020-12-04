@@ -1,5 +1,5 @@
 {% set name = "python-gfal2" %}
-{% set version = "1.9.5" %}
+{% set version = "1.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://gitlab.cern.ch/dmc/gfal2-bindings/-/archive/v{{ version }}/gfal2-bindings-v{{ version }}.tar.gz
-  sha256: 5834e595c7c1800b1c68b5ae76296ea62d852136688645ef229966dcadee4f5a
+  sha256: f20a39b1093e28fa4337f0c9dc1cc6789284203931aef4fbf8cd62ec2076da5d
   patches:
     # From upstream
     - 0001-Fix-installation-with-Python-3.6-3.7.patch
@@ -19,9 +19,9 @@ source:
     - 0004-Fix-finding-Boost-for-Python-2.patch  # [py2k]
 
 build:
-  number: 5
+  number: 0
   skip: true  # [win]
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   ignore_run_exports:
     - glib
 
@@ -52,7 +52,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'GFAL (Grid File Access Library) is a C library providing an abstraction layer of the grid storage system complexity.'
+  summary: GFAL (Grid File Access Library) is a C library providing an abstraction layer of the grid storage system complexity.
   description: |
     GFAL (Grid File Access Library) is a C library providing an abstraction
     layer of the grid storage system complexity. The version 2 of GFAL tries to
