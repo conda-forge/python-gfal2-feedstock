@@ -9,9 +9,6 @@ source:
   url: https://gitlab.cern.ch/dmc/gfal2-bindings/-/archive/v{{ version }}/gfal2-bindings-v{{ version }}.tar.gz
   sha256: f20a39b1093e28fa4337f0c9dc1cc6789284203931aef4fbf8cd62ec2076da5d
   patches:
-    # From upstream
-    - 0001-Fix-installation-with-Python-3.6-3.7.patch
-    - 0002-Fix-Python-3.8.patch
     # Patches for conda
     - 0001-Boost-isn-t-required-if-only-building-Python-3.patch
     - 0002-Fix-gettext-directory-on-Darwin.patch
