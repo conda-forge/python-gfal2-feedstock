@@ -10,7 +10,7 @@ source:
   sha256: f20a39b1093e28fa4337f0c9dc1cc6789284203931aef4fbf8cd62ec2076da5d
   patches:
     # Patches for conda
-    # - 0001-Boost-isn-t-required-if-only-building-Python-3.patch
+    - 0001-Disable-Boost_NO_BOOST_CMAKE.diff
     - 0002-Fix-gettext-directory-on-Darwin.patch
     - 0003-Use-statically-linked-Python.patch  # [py3k and osx]
     - 0004-Fix-finding-Boost-for-Python-2.patch  # [py2k]
