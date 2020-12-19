@@ -1,0 +1,30 @@
+commit be8b4001fd4eb757a48cd2f5d10b4d3671924cc9 (HEAD -> master)
+Author: Chris Burr <chrisburr@cf-x86-mac-mini-1.local>
+Date:   Sat Dec 19 13:40:11 2020 -0800
+
+    Don't build for Python 2
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 5c31b72..50d7c07 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -22,19 +22,6 @@ include(CMakeGeneratePkgConfig REQUIRED)
+
+ find_package(PythonEasy REQUIRED)
+
+-message("Python: ${PYTHON_EXECUTABLE}")
+-
+-if (PYTHON_EXECUTABLE)
+-    if(RHEL STREQUAL "6")
+-      find_package(Boost COMPONENTS python REQUIRED)
+-    elseif(RHEL STREQUAL "7")
+-      find_package(Boost COMPONENTS python REQUIRED)
+-    else()
+-      find_package(Boost COMPONENTS python27 REQUIRED)
+-    endif()
+-endif(PYTHON_EXECUTABLE)
+-
+-
+ if (PYTHON3_CURRENT_VERSION)
+     message("Python 3 installed! ${PYTHON3_CURRENT_VERSION}")
+
