@@ -16,7 +16,7 @@ source:
     - 0004-disable-python27.patch
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   ignore_run_exports:
