@@ -1,5 +1,5 @@
 {% set name = "python-gfal2" %}
-{% set version = "1.10.1" %}
+{% set version = "1.11.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://gitlab.cern.ch/dmc/gfal2-bindings/-/archive/v{{ version }}/gfal2-bindings-v{{ version }}.tar.gz
-  sha256: b466d729a20146248c49a560d79e79e135b6c1b1666dae9edb7044ede83cdbf7
+  sha256: 66b7c9dc10c685ef4823c0f9f7f59a108611602d6cd717d2a3cc8dd353408f89
   patches:
     # Patches for conda
     - 0001-Disable-Boost_NO_BOOST_CMAKE.diff
