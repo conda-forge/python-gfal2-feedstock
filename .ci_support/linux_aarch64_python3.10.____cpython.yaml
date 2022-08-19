@@ -21,7 +21,7 @@ cxx_compiler_version:
 docker_image:
 - quay.io/condaforge/linux-anvil-cos7-x86_64
 gfal2:
-- '2.20'
+- '2.21'
 glib:
 - '2'
 pin_run_as_build:
