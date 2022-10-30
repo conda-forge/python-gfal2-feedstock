@@ -11,9 +11,10 @@ source:
   patches:
     - 0001-Disable-Boost_NO_BOOST_CMAKE.patch
     - 0002-Disable-Python-2.7.patch
+    - 0003-Support-for-Python-3.11.patch
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   ignore_run_exports:
