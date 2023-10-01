@@ -14,7 +14,7 @@ source:
     - 0003-Support-for-Python-3.11.patch
 
 build:
-  number: 2
+  number: 3
   skip: true  # [win]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   ignore_run_exports:
@@ -33,11 +33,11 @@ requirements:
     - python
     - pip
     - gfal2
-    - boost
+    - libboost-python-devel
     - glib
   run:
     - python
-    - boost
+    - libboost-python-devel
 
 test:
   imports:
