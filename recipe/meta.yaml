@@ -13,7 +13,7 @@ source:
     - 0002-Disable-Python-2.7.patch
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   ignore_run_exports:
@@ -31,7 +31,7 @@ requirements:
   host:
     - python
     - pip
-    - gfal2 2.22.1
+    - gfal2
     - libboost-python-devel
     - glib
   run:

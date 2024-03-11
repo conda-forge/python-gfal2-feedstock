@@ -13,7 +13,7 @@ cxx_compiler:
 cxx_compiler_version:
 - '16'
 gfal2:
-- '2.21'
+- '2.22'
 glib:
 - '2'
 libboost_python_devel:
