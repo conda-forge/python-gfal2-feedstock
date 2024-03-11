@@ -31,7 +31,7 @@ requirements:
   host:
     - python
     - pip
-    - gfal2 2.22.1
+    - gfal2
     - libboost-python-devel
     - glib
   run:
