@@ -27,7 +27,7 @@ gfal2:
 glib:
 - '2'
 libboost_python_devel:
-- '1.84'
+- '1.86'
 pin_run_as_build:
   python:
     min_pin: x.x
