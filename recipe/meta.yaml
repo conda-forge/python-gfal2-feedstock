@@ -32,6 +32,7 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
     - gfal2
     - libboost-python-devel
     - glib
