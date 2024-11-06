@@ -1,5 +1,5 @@
 {% set name = "python-gfal2" %}
-{% set version = "1.12.2" %}
+{% set version = "1.13.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://gitlab.cern.ch/dmc/gfal2-bindings/-/archive/v{{ version }}/gfal2-bindings-v{{ version }}.tar.gz
-  sha256: b5b4bacaa244faf29d89563b27026a0d00bd5e4fbe5450fe6721439d9f835753
+  sha256: 187ef74043726ca1cd96e233689616b691952063ed54653cfece02a974b14c95
   patches:
     - 0001-Disable-Boost_NO_BOOST_CMAKE.patch
     - 0002-Disable-Python-2.7.patch
 
 build:
-  number: 2
+  number: 0
   skip: true  # [win]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   ignore_run_exports:
