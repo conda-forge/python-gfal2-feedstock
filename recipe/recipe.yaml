@@ -22,7 +22,8 @@ build:
 requirements:
   build:
     - if: build_platform != target_platform
-      then: python
+      then:
+        - python
         - cross-python_${{ target_platform }}
     - ${{ compiler('c') }}
     - ${{ compiler('cxx') }}
