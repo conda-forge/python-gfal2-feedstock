@@ -12,7 +12,7 @@ source:
   url: https://gitlab.cern.ch/dmc/gfal2-bindings/-/archive/v${{ version }}/gfal2-bindings-v${{ version }}.tar.gz
   sha256: 187ef74043726ca1cd96e233689616b691952063ed54653cfece02a974b14c95
   patches:
-    - 0002-Disable-Python-2.7.patch
+    - 0001-Force-CMake-to-use-the-correct-Python.patch
 
 build:
   number: 0
