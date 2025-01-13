@@ -3,7 +3,7 @@ About python-gfal2-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-gfal2-feedstock/blob/main/LICENSE.txt)
 
-Home: Python bindings for gfal 2.0
+Home: https://dmc-docs.web.cern.ch/dmc-docs/
 
 Package license: Apache-2.0
 
@@ -19,7 +19,6 @@ simplify at the maximum the file operations in a distributed environment.
 The complexity of the grid is hidden from the client side behind a simple
 common POSIX API. GFAL2 is able to manage all the common used file access
 protocols in a grid & cloud environment.
-
 
 Current build status
 ====================
