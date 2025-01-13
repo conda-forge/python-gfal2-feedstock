@@ -1,31 +1,32 @@
-{% set name = "python-gfal2" %}
-{% set version = "1.13.0" %}
+schema_version: 1
+
+context:
+  name: python-gfal2
+  version: 1.13.0
 
 package:
-  name: {{ name|lower }}
-  version: {{ version }}
+  name: ${{ name|lower }}
+  version: ${{ version }}
 
 source:
-  url: https://gitlab.cern.ch/dmc/gfal2-bindings/-/archive/v{{ version }}/gfal2-bindings-v{{ version }}.tar.gz
+  url: https://gitlab.cern.ch/dmc/gfal2-bindings/-/archive/v${{ version }}/gfal2-bindings-v${{ version }}.tar.gz
   sha256: 187ef74043726ca1cd96e233689616b691952063ed54653cfece02a974b14c95
   patches:
-    - 0001-Disable-Boost_NO_BOOST_CMAKE.patch
     - 0002-Disable-Python-2.7.patch
 
 build:
   number: 0
-  skip: true  # [win]
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
-  ignore_run_exports:
-    - glib
+  skip: win
+  script: ${{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
-    - python                                 # [build_platform != target_platform]
-    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
-    - {{ compiler('c') }}
-    - {{ stdlib("c") }}
-    - {{ compiler('cxx') }}
+    - if: build_platform != target_platform
+      then: python
+        - cross-python_${{ target_platform }}
+    - ${{ compiler('c') }}
+    - ${{ compiler('cxx') }}
+    - ${{ stdlib("c") }}
     - cmake
     - make
     - pkg-config
@@ -39,14 +40,14 @@ requirements:
   run:
     - python
 
-test:
-  imports:
-    - gfal2
+tests:
+  - python:
+      imports:
+        - gfal2
+      pip_check: false
 
 about:
-  home: Python bindings for gfal 2.0
   license: Apache-2.0
-  license_family: Apache
   license_file: LICENSE
   summary: GFAL (Grid File Access Library) is a C library providing an abstraction layer of the grid storage system complexity.
   description: |
@@ -56,9 +57,11 @@ about:
     The complexity of the grid is hidden from the client side behind a simple
     common POSIX API. GFAL2 is able to manage all the common used file access
     protocols in a grid & cloud environment.
-  doc_url: https://dmc-docs.web.cern.ch/dmc-docs/gfal2-python.html
-  dev_url: https://gitlab.cern.ch/dmc/gfal2-bindings
+  homepage: https://dmc-docs.web.cern.ch/dmc-docs/
+  repository: https://gitlab.cern.ch/dmc/gfal2-bindings
+  documentation: https://dmc-docs.web.cern.ch/dmc-docs/gfal2-python.html
 
 extra:
   recipe-maintainers:
     - chrisburr
+
