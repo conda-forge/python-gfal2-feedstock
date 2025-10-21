@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: python-gfal2
-  version: 1.13.0
+  version: "1.13.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://gitlab.cern.ch/dmc/gfal2-bindings/-/archive/v${{ version }}/gfal2-bindings-v${{ version }}.tar.gz
-  sha256: 187ef74043726ca1cd96e233689616b691952063ed54653cfece02a974b14c95
+  sha256: c91f955b51030c998c8f5c4d4d5b51aa32ef426cd7af87ce45b5cd11ca48ab51
   patches:
     - 0001-Force-CMake-to-use-the-correct-Python.patch
 
