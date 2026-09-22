@@ -13,9 +13,13 @@ source:
   sha256: c91f955b51030c998c8f5c4d4d5b51aa32ef426cd7af87ce45b5cd11ca48ab51
   patches:
     - 0001-Force-CMake-to-use-the-correct-Python.patch
+    # From CPython 3.15 there is no shared libpython, so the full Development
+    # component no longer resolves even though the bindings never link against
+    # it. Not yet sent to https://gitlab.cern.ch/dmc/gfal2-bindings.
+    - 0002-Only-require-the-Python-Development.Module-component.patch
 
 build:
-  number: 3
+  number: 4
   skip: win
   script: ${{ PYTHON }} -m pip install . --no-deps -vv
 
